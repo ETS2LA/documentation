@@ -13,7 +13,7 @@ Points are 2D coordinates. This means that any object initialized with a point w
 > **y**: float
 
 > **anchor**: Coordinate \= None  
-The point will be an offset to said anchor’s screen position. This is used by the HUD plugin to anchor the entire HUD on a single 3D point for realistic movement on truck rotation.
+The point will be an offset to said anchor's screen position. This is used by the HUD plugin to anchor the entire HUD on a single 3D point for realistic movement on truck rotation.
 
 ### Coordinate
 

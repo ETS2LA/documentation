@@ -2,38 +2,38 @@
 
 This module is a bit different from a normal module. Instead of using the run() file it just provides an object to interface with the SDK. We will explore how this works here!
 
-## Usage
+### Usage
 
 ```python
 # Remember to add the module to the description!
 def init(self):
-  self.controller = self.modules.SDKController.SCSController()
+    self.controller = self.modules.SDKController.SCSController()
 ```
 
 This will create an **SCSController** object into a local variable on the Plugin. You can then use the controller to send output to the game. Below is an example of how to use these controls.
 
 ```python
 def run(self):
-  self.controller.steering = 0.2 # Will steer 20% right.
+    self.controller.steering = 0.2 # Will steer 20% right.
 
-  # Some controls are holds, these work as you expect.
-  self.controller.horn = True # enable the button
-  time.sleep(2)
-  self.controller.horn = False # disable the button
+    # Some controls are holds, these work as you expect.
+    self.controller.horn = True # enable the button
+    time.sleep(2)
+    self.controller.horn = False # disable the button
 
-  # But some work as actual buttons, these you have to cycle.
-  self.controler.lblinker = True
-  time.sleep(1/20)
-  self.controler.lblinker = False
-  # Now enabled
+    # But some work as actual buttons, these you have to cycle.
+    self.controler.lblinker = True
+    time.sleep(1/20)
+    self.controler.lblinker = False
+    # Now enabled
 
-  self.controler.lblinker = True
-  time.sleep(1/20)
-  self.controler.lblinker = False
-  # Now disabled
+    self.controler.lblinker = True
+    time.sleep(1/20)
+    self.controler.lblinker = False
+    # Now disabled
 ```
 
-## Available Controls
+### Available Controls
 
 | Variable Name | Description | Notes |
 | --- | --- | --- |
@@ -315,5 +315,5 @@ def run(self):
 | menustereo | \-  |     |
 
 :::warning
-Both ETS2 and ATS are constantly changing and some of these controls might not work anymore. If this happens then send **Tumppi066** a message on discord and we’ll look into it!
+Both ETS2 and ATS are constantly changing and some of these controls might not work anymore. If this happens then send **Tumppi066** a message on discord and we'll look into it!
 :::

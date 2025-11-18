@@ -1,8 +1,9 @@
-# Welcome!
-
+---
+title: "Welcome!"
+---
 These pages have been written to document the ETS2LA framework and plugins so that other developers have the option of working with us. Please note that some pages here might be slightly out of date due to the speed of development.
 
-- [Getting Started](Getting%20Started/Creating%20Your%20First%20Plugin.md)
+- [Getting Started](Getting%20Started/Creating%20Your%20First%20Plugin)
 
 ### About Contributions
 

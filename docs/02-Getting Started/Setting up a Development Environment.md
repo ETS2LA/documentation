@@ -4,7 +4,7 @@ While it is technically possible to develop for ETS2LA using the release environ
 
 ### 1\. Download all the dependencies.
 
-Make sure you have Python version 3.11 or 3.12 installed **globally**. The ETS2LA installer uses python version [3.12.8](https://www.python.org/downloads/release/python-3128/), it’s recommended you use it as it matches what all of our users use. You will also need [git](https://github.com/git-for-windows/git/releases/tag/v2.49.0.windows.1), but presumably you already have that installed.
+Make sure you have Python version 3.11 or 3.12 installed **globally**. The ETS2LA installer uses python version [3.12.8](https://www.python.org/downloads/release/python-3128/), it's recommended you use it as it matches what all of our users use. You will also need [git](https://github.com/git-for-windows/git/releases/tag/v2.49.0.windows.1), but presumably you already have that installed.
 
 If you intend to develop the frontend as well, then you will want to also install [NodeJS](https://nodejs.org).
 
@@ -16,7 +16,7 @@ Once you have your own changes you can make a **PR**, _Pull Request,_ to merge t
 
 ### 3A. Clone ETS2LA with GitHub Desktop.
 
-[GitHub Desktop](https://github.com/apps/desktop) is a free and open source helper program by GitHub. Personally I use Desktop instead of the git command line tools. Once you’ve logged into Desktop you can go to _File → Clone Repository → Pick your ETS2LA repo._
+[GitHub Desktop](https://github.com/apps/desktop) is a free and open source helper program by GitHub. Personally I use Desktop instead of the git command line tools. Once you've logged into Desktop you can go to _File → Clone Repository → Pick your ETS2LA repo._
 
 ### 3B. Clone ETS2LA from GitHub.
 
@@ -36,8 +36,7 @@ Another useful argument is `--local` that will run the frontend locally on your 
 `python main.py --dev --local`  
 Will run ETS2LA in development mode with a local build of the frontend.
 
-:::danger
-**REMEMBER!**
+:::danger[REMEMBER!]
 
 You should **always** run ETS2LA with the `--dev` flag when you have **uncommitted** changes on your repository. ETS2LA **might overwrite** the changes outside of _Developer Mode_!
 :::
@@ -46,10 +45,10 @@ You should **always** run ETS2LA with the `--dev` flag when you have **uncommitt
 
 The Desktop application will show your changes on the left side. You can write a summary and description of your changes below that, and then press _Commit to main_. **This will save your changes locally.** If you accidentally delete a file, that file will still be saved in the git repository.
 
-To send your changes to GitHub, you can press the _Push origin_ button next to the branch selector. This will upload your changes to GitHub. Once that is done you can be 100% sure that the changes won’t disappear even if you delete the code from your computer.
+To send your changes to GitHub, you can press the _Push origin_ button next to the branch selector. This will upload your changes to GitHub. Once that is done you can be 100% sure that the changes won't disappear even if you delete the code from your computer.
 
 ### 5B. Pushing your changes with the git command line.
 
 You can first check all your edited files with `git status` . If you want to commit (save) certain files you can do that by writing `git add path/to/file/and/its/name.txt` , if you want to commit (save) **all** files then you can do `git add --all` .
 
-Once you’ve added files you can run `git commit -m “Message”` to commit the files locally, and `git push` to send the files to GitHub.
+Once you've added files you can run `git commit -m "Message"` to commit the files locally, and `git push` to send the files to GitHub.

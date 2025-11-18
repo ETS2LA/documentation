@@ -2,11 +2,12 @@
 
 This module will provide information from the in game API. This is the same API that most other applications use as well.
 
-## Arguments
+### Arguments
 
-- **Fallback**: bool \= FalseIf enabled the module will return “not connected” instead of a virtual dictionary when no data is received from the game API.
+> **Fallback**: bool = False  
+If enabled the module will return "not connected" instead of a virtual dictionary when no data is received from the game API.
 
-## Return Data
+### Return Data
 
 TruckSimAPI will return a dictionary with all the data available from the api. In the following dictionary the table title is the parent key, and the values are child keys.
 
@@ -31,7 +32,7 @@ Use **CTRL+F** to search. There is a lot of data here!
 | placeHolder2 | …   |
 | time | The current in-game time. |
 | simulatedTime | Incrementing simulation time. |
-| renderTime | The last frame’s render time. |
+| renderTime | The last frame's render time. |
 | multiplayerTimeOffset | …   |
 
 | scsValues | Description |

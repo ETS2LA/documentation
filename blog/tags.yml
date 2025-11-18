@@ -1,19 +1,14 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+update:
+  label: Update
+  permalink: /update
+  description: This tag contains all major ETS2LA updates.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+news:
+  label: News
+  permalink: /news
+  description: This tag contains all ETS2LA news posts.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+developers:
+  label: Developers
+  permalink: /developers
+  description: This tag contains all posts with relevant information for developers.
