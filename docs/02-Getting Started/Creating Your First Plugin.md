@@ -76,7 +76,7 @@ And that's it! We are done! After you start ETS2LA again (or click the _Reload P
 
 So I have a vision for this plugin. I want to flash the highbeams in ETS2, but I want some additional functionality like a settings page for changing the frequency and hold time, a slider on the frontend to show the progress, as well as a keybind in the settings to make enabling and disabling easy.
 
-We should probably start with the actual functionality of blinking the lights. [SDKController](../Modules/SDKController.md) is what we use to send controls to the game. And by looking at that page we can see a `hblight` variable. That's probably what we need! I guess we should import the module and see what it does.  
+We should probably start with the actual functionality of blinking the lights. [SDKController](/docs/Modules/SDKController) is what we use to send controls to the game. And by looking at that page we can see a `hblight` variable. That's probably what we need! I guess we should import the module and see what it does.  
 
 :::warning
 The games are weird when it comes to control output. You often have to experiment with how the game handles some controls to find the right way to use them. Also remember that the game will refuse any input when it's not focused!
@@ -357,6 +357,6 @@ We've made a very simple plugin, but I hope this indicates how building plugins 
 
 If you are missing something or would've liked more information about some section then you can ping me on discord and I'll try and improve the page. With that said the final plugin files are available on https://github.com/ETS2LA/example-plugin so you can take a look at them yourself.
 
-Also remember to check [Plugin Catalogue](../Plugins%20%281%29/Plugin%20Catalogue.md) for how to get your plugin out to the users!
+Also remember to check [Plugin Catalogue](/docs/Plugin%20Framework/Plugin%20Catalogue) for how to get your plugin out to the users!
 
 **I hope this helped you, and I hope we can see you again in the future ❤️**
