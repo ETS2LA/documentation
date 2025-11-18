@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunksite=globalThis.webpackChunksite||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Documentation pages refreshed.","permalink":"/blog/new-documentation","unlisted":false,"date":"2025-11-18T00:00:00.000Z"}]}')}}]);

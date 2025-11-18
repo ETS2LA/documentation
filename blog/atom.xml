@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.ets2la.com/blog</id>
+    <title>ETS2LA Documentation Blog</title>
+    <updated>2025-11-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.ets2la.com/blog"/>
+    <subtitle>ETS2LA Documentation Blog</subtitle>
+    <icon>https://docs.ets2la.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Documentation pages refreshed.]]></title>
+        <id>https://docs.ets2la.com/blog/new-documentation</id>
+        <link href="https://docs.ets2la.com/blog/new-documentation"/>
+        <updated>2025-11-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[For a while now the documentation has been handled on Docmost, and while we appreciated the ease of use and the features it provided, we felt that it's better to bring the documentation back to markdown files. This allows us to have more control over the content, and more importantly it allows the community to contribute easily via pull requests.]]></summary>
+        <content type="html"><![CDATA[<p>For a while now the documentation has been handled on Docmost, and while we appreciated the ease of use and the features it provided, we felt that it's better to bring the documentation back to markdown files. This allows us to have more control over the content, and more importantly it allows the community to contribute easily via pull requests.</p>
+<p>These pages will be updated over time to improve the existing content and to add more information. If you want to help out feel free to open a PR on the GitHub repo.</p>
+<br>
+<p><strong>Third Party Plugins</strong></p>
+<ul>
+<li class="">You can create your own documentation pages relevant to your plugins in the <code>docs/plugins/your-plugin-name</code> folder!</li>
+</ul>]]></content>
+        <author>
+            <name>Tumppi066</name>
+            <uri>https://github.com/Tumppi066</uri>
+        </author>
+        <category label="News" term="News"/>
+        <category label="Developers" term="Developers"/>
+    </entry>
+</feed>

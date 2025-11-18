@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>ETS2LA Documentation Blog</title>
+        <link>https://docs.ets2la.com/blog</link>
+        <description>ETS2LA Documentation Blog</description>
+        <lastBuildDate>Tue, 18 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Documentation pages refreshed.]]></title>
+            <link>https://docs.ets2la.com/blog/new-documentation</link>
+            <guid>https://docs.ets2la.com/blog/new-documentation</guid>
+            <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[For a while now the documentation has been handled on Docmost, and while we appreciated the ease of use and the features it provided, we felt that it's better to bring the documentation back to markdown files. This allows us to have more control over the content, and more importantly it allows the community to contribute easily via pull requests.]]></description>
+            <content:encoded><![CDATA[<p>For a while now the documentation has been handled on Docmost, and while we appreciated the ease of use and the features it provided, we felt that it's better to bring the documentation back to markdown files. This allows us to have more control over the content, and more importantly it allows the community to contribute easily via pull requests.</p>
+<p>These pages will be updated over time to improve the existing content and to add more information. If you want to help out feel free to open a PR on the GitHub repo.</p>
+<br>
+<p><strong>Third Party Plugins</strong></p>
+<ul>
+<li class="">You can create your own documentation pages relevant to your plugins in the <code>docs/plugins/your-plugin-name</code> folder!</li>
+</ul>]]></content:encoded>
+            <category>News</category>
+            <category>Developers</category>
+        </item>
+    </channel>
+</rss>
