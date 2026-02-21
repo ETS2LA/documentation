@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Getting%20Started/Creating%20Your%20First%20Plugin">
+            to="/docs/Python/Getting%20Started/Creating%20Your%20First%20Plugin">
             Get started with your first plugin - 15min ⏱️
           </Link>
         </div>
@@ -33,8 +33,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Welcome to the ETS2LA Docs`}
+      description="This site hosts documentation for ETS2LA V2.0 and C#.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
