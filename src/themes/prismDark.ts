@@ -12,11 +12,17 @@ const baseTheme = themes.vsDark;
 
 export default {
   plain: {
-    color: '#D4D4D4',
+    color: '#9CDCFE',
     backgroundColor: '#212121',
   },
   styles: [
     ...baseTheme.styles,
+    {
+      types: ["namespace"],
+      style: {
+        color: "#4EC9B0",
+      }
+    },
     {
       types: ['title'],
       style: {
@@ -57,7 +63,7 @@ export default {
     {
       types: ['keyword', 'rule'],
       style: {
-        color: '#C586C0',
+        color: '#569CD6',
       },
     },
     {

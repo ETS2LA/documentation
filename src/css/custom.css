@@ -4,7 +4,6 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #f9671e;
   --ifm-color-primary-dark: #e85a0d;
@@ -13,11 +12,14 @@
   --ifm-color-primary-light: #fa742f;
   --ifm-color-primary-lighter: #fa793b;
   --ifm-color-primary-lightest: #fc8d59;
-  --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  --ifm-h1-font-size: 2rem;
+  --ifm-heading-font-family: "Geist";
+  --ifm-font-family-monospace: "GeistMono";
+  --ifm-code-font-size: 90%;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #ff8547;
   --ifm-color-primary-dark: #ff7330;
@@ -26,22 +28,25 @@
   --ifm-color-primary-light: #ff975e;
   --ifm-color-primary-lighter: #ffa068;
   --ifm-color-primary-lightest: #ffb582;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.4);
 }
 
-/* Custom font sizes for headings */
-h1 {
-  font-size: 2.5em;
+@font-face {
+  font-family: "Geist";
+  src: url("/font/Geist.ttf") format("truetype");
 }
-h2 {
-  font-size: 2.25em;
+
+@font-face {
+  font-family: "GeistMono";
+  src: url("/font/GeistMono.ttf") format("truetype");
 }
-h3 {
-  font-size: 1.5em;
+
+body {
+  font-family: "Geist"
 }
-h4 {
-  font-size: 1.25em;
-}
-h5 {
-  font-size: 1em;
+
+code {
+  border-radius: 4px;
+  font-weight: var(--ifm-font-weight-semibold);
+  color: var(--ifm-color-emphasis-500);
 }

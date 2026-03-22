@@ -36,6 +36,10 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    "plugin-image-zoom",
+  ],
+
   presets: [
     [
       'classic',
@@ -44,6 +48,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
         },
         blog: {
+          blogSidebarCount: 0,
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -100,7 +105,21 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismDark,
+      additionalLanguages: ["csharp"]
     },
+    
+    imageZoom: {
+      // CSS selector to apply the plugin to, defaults to '.markdown img'
+      selector: '.markdown img',
+      // Optional medium-zoom options
+      // see: https://www.npmjs.com/package/medium-zoom#options
+      options: {
+        margin: 12,
+        background: '#111111cc',
+        scrollOffset: 0,
+      },
+    },
+
   } satisfies Preset.ThemeConfig,
 };
 

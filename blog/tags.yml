@@ -12,3 +12,8 @@ developers:
   label: Developers
   permalink: /developers
   description: This tag contains all posts with relevant information for developers.
+
+C#:
+  label: C#
+  permalink: /csharp
+  description: This tag contains all posts related to C# development.
