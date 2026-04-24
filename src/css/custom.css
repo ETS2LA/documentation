@@ -50,3 +50,24 @@ code {
   font-weight: var(--ifm-font-weight-semibold);
   color: var(--ifm-color-emphasis-500);
 }
+
+.image-pair {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.stacked-image {
+  width: calc(50% - 10px);
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-pair {
+    flex-direction: column;
+  }
+
+  .stacked-image {
+    width: 100%;
+  }
+}

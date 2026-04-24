@@ -26,10 +26,10 @@ Many developers have been helping us stay on track, and with their help we have 
 ]}/>
 With the help of **@Roccovax** and **@truckermudgeon**, we've been able to port over our SDKs to Linux. This was the last step in our plan to support Linux natively. Much of the time I've had has gone into converting ETS2LA C# to work on Linux, and while this was a lot of work, it also means that I can now use my preferred OS while developing. **This change will finally open us up to handhelds like the Steam Deck.**
 
-![](/blog/images/2026-3-18-linux.png)
+<img src="/blog/images/2026-3-18-linux.png" style={{width: "100%", borderRadius: "10px"}}/>
 <ImageCaption caption="ETS2LA Python running on Linux (Image by Roccovax)"/>
 
-![](/blog/images/2026-3-18-linux-uw.png)
+<img src="/blog/images/2026-3-18-linux-uw.png" style={{width: "100%", borderRadius: "10px"}}/>
 <ImageCaption caption="ETS2LA C# with Linux SDKs (Image by myself)"/>
 
 <QuestionAndAnswer>
