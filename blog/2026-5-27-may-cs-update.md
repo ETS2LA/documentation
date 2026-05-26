@@ -17,9 +17,15 @@ We are only missing one major feature (ACC) until I'm comfortable with releasing
 You should see one more devblog before the initial release. The devblogs should continue even after release, as we're going to be using these as a way to compile a list of changes, and if there's enough interest, we might explain and showcase how some of our features work internally.
 
 ### Improvements to lane keeping / navigation
-Last month I teased the first version of a simple lane keeping system. This system has vastly improved in the days since. We're still far from a *great* system, but even in it's current state the feedback from testers has been good. Below is a video showcasing the current system navigating through a city onto a highway.
+Last month I teased the first version of a simple lane keeping system. This system has vastly improved in the days since. We're still far from a *great* system, but even in it's current state the feedback from testers has been good. Below is a video showcasing the current system following the navigation route set in game.
 
-Much like the previous video, this includes no filtering on steering. This means what you're seeing is the raw output from our steering algorithms, and upon release it will be smoothed out.
+<video controls width="100%">  
+  <source src="/blog/videos/2026-5-26-nav-example.mp4" type="video/mp4" />  
+  Your browser does not support the video tag.  
+</video>
+<ImageCaption caption="ETS2LA C# navigating in Sweden."/>
+
+Much like last month's video, we include no filtering on steering output here. This means what you're seeing is the raw output from our steering algorithms, and upon release it will be smoothed out. There are also some weird lane choices, lane changes aren't smooth, and the system still sometimes can't figure out the next item. However overall I think we're already on par with the Python version, and this time there are no lag spikes or weird stutters!
 
 ### Functional UI
 During the initial stages of development, most settings are not exposed to users. However as we move closer to release, having these options available without additional fuss is important. I've kept in mind some of the lessons we've learned over the years of developing in Python, and the goal is to hopefully provide a better onboarding experience in addition to finally having some long needed features.
@@ -32,7 +38,7 @@ One of these features is the ability to change ETS2LA's display units straight f
 </video>
 <ImageCaption caption="Dynamically changing display units."/>
 
-Work on the UI will continue after the initial open beta. What you see here is most likely not going to be the final look of our UI, and even the current code underneath is somewhat unfinished. On that note if you have any interesting feedback or suggestions then you can send those our way. We're always interested in what the community thinks!
+Work on the UI will continue after the initial open beta. What you see here is most likely not going to be the final look of our UI, and even the current code underneath is somewhat unfinished. If you have any interesting feedback or suggestions then you can send those our way. We're always interested in what the community thinks! Personally I'm starting to like what Rivian is doing with their UI, maybe we'll find inspiration there ;)
 
 ### Operating System support
 <FeatureAuthors authors={[
@@ -41,6 +47,21 @@ Work on the UI will continue after the initial open beta. What you see here is m
 It's previously been noted that ETS2LA will work natively on Windows and Linux. However due to work by **playzzero**, we are now also in the process of adding support for MacOS. While I don't have any videos worth showing (it's still WIP after all) I can pretty confidently say we will support MacOS by open beta launch, or at the very least slightly after it.
 
 That said it's important to note that you cannot mix and match versions. If for example you're running the game inside proton, you will also have to run ETS2LA inside that same container. Essentially they need to run on the same "logical" system, a VM doesn't count as a part of your main OS.
+
+### What to expect next month
+I have to stress here that next month's release is as it name implies, an **open beta**. There will be missing features and bugs, and to be honest that's really the point. The closed beta testers have been putting in amazing work, but we still need more people testing ETS2LA in all the different situations possible. We'll use your feedback to fix bugs and add features, and hopefully ETS2LA C# won't be in beta for more than a month or two!
+
+With that said here's what you can expect to see next month:
+- **Initial draft of our UI**, this will likely be remade entirely based on feedback.
+- **No Visualization or Map pages**, ETS2LA C# will only ship with an AR HUD similar to what you see in the video above. The Visualization and Map pages will be remade in the future, especially the visualization will take a while.
+- **Navigation, lane keeping, and ACC will be available**, but they will likely be missing some features and have bugs. These will improve drastically even within weeks.
+- **3rd party plugin support**, we'll have a similar catalogue as we have now. Even our official plugins will be in the catalogue.
+- **Initial onboarding experience**, this will likely be better than what we have right now.
+- Support for **Windows, Linux, and MacOS**.
+
+Most missing features will be added in the weeks following the release. This is in addition to our networked features, which we're still working on designing. This means the subscription won't be available at launch, but instead will be added in the future. Again none of the features you have will be taken away, the subscription will come with additional server side features to support development.
+
+I hope you're as excited for ETS2LA as I am, this will be the biggest change we've ever made, and I can't wait to share it with you all!
 
 <br/>
 ---
