@@ -48,6 +48,11 @@ It's previously been noted that ETS2LA will work natively on Windows and Linux. 
 
 That said it's important to note that you cannot mix and match versions. If for example you're running the game inside proton, you will also have to run ETS2LA inside that same container. Essentially they need to run on the same "logical" system, a VM doesn't count as a part of your main OS.
 
+### Notice about Ko-Fi
+As we approach the open beta, I will also close my existing Ko-Fi page. In the future people will be able to support the project *and* get something for their money. I don't like asking for donations in this situation. As a thank you to existing supporters, they'll receive subscription time equal to their donation + 1 month (ie. 3€ donation is 2 months).
+
+Important to note here that once again, the subscription is entirely optional for server side features. Whether a feature is behind the subscription or not is a simple question: does it cost me money to run? If so then it'll be a subscription feature. Anything that runs on your PC costs me nothing, and as such **will not be behind a subscription**.
+
 ### What to expect next month
 I have to stress here that next month's release is as it name implies, an **open beta**. There will be missing features and bugs, and to be honest that's really the point. The closed beta testers have been putting in amazing work, but we still need more people testing ETS2LA in all the different situations possible. We'll use your feedback to fix bugs and add features, and hopefully ETS2LA C# won't be in beta for more than a month or two!
 
