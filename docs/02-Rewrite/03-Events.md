@@ -27,6 +27,21 @@ And that's pretty much it. Those two commands are everything you need to get acc
 
 - **Telemetry Events** : (`ETS2LA.Telemetry.`) `GameTelemetry.Current.EventString`
   - Publishes: `GameTelemetryData`, check it's page for more information.
+- **Backend Plugin State Changes** : (`ETS2LA.Backend.`) `Enabled/Disabled`
+  - Publishes: `string` that contains the plugin's name
+  - Alternatively `.Enabled/Disabled.PluginName` for events specific to a single plugin.
+- **Game SDK Updates** : (`ETS2LA.SDK.`)
+  - Camera Data - Publishes: `CameraData` at `.Camera.Data`.
+  - Navigation Data - Publishes: `NavigationData` at `.Navigation.Data`.
+  - Parked Vehicles - Publishes: `ParkedVehicleData` at `.ParkedVehicles.Data`.
+  - Semaphores - Publishes: `SemaphoreData` at `.Semaphores.Data`.
+  - Traffic Data - Publishes: `TrafficData` at `.Traffic.Data`.
+- **Game Telemetry Updates** : (`ETS2LA.Telemetry.`) `.Data`
+  - Publishes: `GameTelemetryData` at `.Data`.
+- **UI Page Changes** : (`ETS2LA.UI.`) `.SwitchedPage`
+  - Publishes: `string` that contains the new page's name.
+  - Alternatively `.SwitchedPage.PageName` for events specific to a single page.
+  - Also `.SwitchedPage.Settings.PageName` for events specific to a single settings page.
 
 :::note
 Did you notice the mistake in that code snippet? The event got `.Publish`ed before a subscriber was registered, so the subscriber never actually received the event! ETS2LA does not hold the latest state of events in memory, so you have to make sure you take this into account.
