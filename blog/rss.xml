@@ -4,7 +4,7 @@
         <title>ETS2LA Documentation Blog</title>
         <link>https://docs.ets2la.com/blog</link>
         <description>ETS2LA Documentation Blog</description>
-        <lastBuildDate>Fri, 29 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[ETS2LA C# Devblog for May]]></title>
             <link>https://docs.ets2la.com/blog/devblog-may-2026</link>
             <guid>https://docs.ets2la.com/blog/devblog-may-2026</guid>
-            <pubDate>Fri, 29 May 2026 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 27 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Compared to the past few months, we have made progress at a significant speed. Some of you might have seen previews on Discord, and I'll expand on those here.]]></description>
             <content:encoded><![CDATA[<p>Compared to the past few months, we have made progress at a significant speed. Some of you might have seen previews on Discord, and I'll expand on those here.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="release-schedule">Release Schedule<a href="https://docs.ets2la.com/blog/devblog-may-2026#release-schedule" class="hash-link" aria-label="Direct link to Release Schedule" title="Direct link to Release Schedule" translate="no">​</a></h3>

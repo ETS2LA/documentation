@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.ets2la.com/blog</id>
     <title>ETS2LA Documentation Blog</title>
-    <updated>2026-05-29T00:00:00.000Z</updated>
+    <updated>2026-05-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.ets2la.com/blog"/>
     <subtitle>ETS2LA Documentation Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[ETS2LA C# Devblog for May]]></title>
         <id>https://docs.ets2la.com/blog/devblog-may-2026</id>
         <link href="https://docs.ets2la.com/blog/devblog-may-2026"/>
-        <updated>2026-05-29T00:00:00.000Z</updated>
+        <updated>2026-05-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Compared to the past few months, we have made progress at a significant speed. Some of you might have seen previews on Discord, and I'll expand on those here.]]></summary>
         <content type="html"><![CDATA[<p>Compared to the past few months, we have made progress at a significant speed. Some of you might have seen previews on Discord, and I'll expand on those here.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="release-schedule">Release Schedule<a href="https://docs.ets2la.com/blog/devblog-may-2026#release-schedule" class="hash-link" aria-label="Direct link to Release Schedule" title="Direct link to Release Schedule" translate="no">​</a></h3>
