@@ -1,7 +1,9 @@
 ---
-title: "Working with ETS2LA's state"
-sidebar_label: "8. Working with ETS2LA's state"
+title: "Application State"
+sidebar_label: "Application State"
 ---
+
+[`ETS2LA.State`](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/blob/rewrite/ETS2LA.State/Program.cs#L29)
 
 If you want to create a plugin that does anything with the game data, or with steering and acceleration, then you'll want to use ETS2LA's unified `ApplicationState` to get rid of some of the boilerplate code that comes with processing user input.
 

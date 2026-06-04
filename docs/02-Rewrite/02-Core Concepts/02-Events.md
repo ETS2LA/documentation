@@ -1,22 +1,21 @@
 ---
-title: "The Event System"
-sidebar_label: "3. The Event System"
+title: "Event System"
+sidebar_label: "Event System"
 ---
 
-Now we're getting to our first library, [`ETS2LA.Backend.Events`](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/blob/rewrite/ETS2LA.Backend/EventBus/Bus.cs#L3).
+[`ETS2LA.Backend.Events`](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/blob/rewrite/ETS2LA.Backend/EventBus/Bus.cs#L3)
 
-Most of inter-plugin communication is done via the ETS2LA `EventBus`. This bus provides an interface for plugins to listen to, and emit events between each other. We're also passing in events from the game into this bus, so that the same API can be used for everything.
+Almost all inter-plugin communication is done via the ETS2LA `EventBus`. This bus provides an interface for plugins to listen to, and emit events between each other, as well as the backend. We're also passing in events from the game into this bus, so that the same API can be used for everything.
 
 ### How does the events system work?
 ```csharp
 using ETS2LA.Backend.Events;
 
-// Provider will call .Publish to fire an event to all subscribers.
-// You have to include the type of data you're sending as a generic parameter.
-Events.Current.Publish<float>("ExampleProvider.CurMicroseconds", System.DateTime.Now.Microsecond);
-
-// And now a subscriber can listen to that event via a callback function.
+// Subscriber can listen to that event via a callback function.
 Events.Current.Subscribe<float>("ExampleProvider.CurMicroseconds", OnCurMicroseconds);
+
+// Provider will call .Publish to fire an event to all subscribers.
+Events.Current.Publish<float>("ExampleProvider.CurMicroseconds", System.DateTime.Now.Microsecond);
 
 void OnCurMicroseconds(float microseconds)
 {
@@ -37,12 +36,16 @@ And that's pretty much it. Those two commands are everything you need to get acc
   - Semaphores - Publishes: `SemaphoreData` at `.Semaphores.Data`.
   - Traffic Data - Publishes: `TrafficData` at `.Traffic.Data`.
 - **Game Telemetry Updates** : (`ETS2LA.Telemetry.`) `.Data`
-  - Publishes: `GameTelemetryData` at `.Data`.
+  - Publishes: `GameTelemetryData`
 - **UI Page Changes** : (`ETS2LA.UI.`) `.SwitchedPage`
   - Publishes: `string` that contains the new page's name.
   - Alternatively `.SwitchedPage.PageName` for events specific to a single page.
   - Also `.SwitchedPage.Settings.PageName` for events specific to a single settings page.
 
-:::note
-Did you notice the mistake in that code snippet? The event got `.Publish`ed before a subscriber was registered, so the subscriber never actually received the event! ETS2LA does not hold the latest state of events in memory, so you have to make sure you take this into account.
+:::warning
+Ensure that both plugins have access to the same class definitions that are used for events. see the previous page for an example of the problems that you could encounter otherwise!
+:::
+
+:::danger
+When calling `Events.Publish`, **all subscribers are handled synchronously**. Ensure your subscription functions are simple, as you could be causing slowdowns in other parts of the program otherwise!
 :::

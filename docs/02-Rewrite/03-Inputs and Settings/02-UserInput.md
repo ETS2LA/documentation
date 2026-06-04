@@ -1,13 +1,15 @@
 ---
-title: "Gathering user input"
-sidebar_label: "5. Gathering user input"
+title: "User Input"
+sidebar_label: "User Input"
 ---
 
-This is one of the most important features of ETS2LA, and it's also the one that you **must use** instead of 3rd party libraries. ETS2LA provides a built in way to gather user input, and it's the only way that is guaranteed to work across all plugins, features and platforms. We handle the transitions between Linux and Windows, use our API or be square!
+[`ETS2LA.Controls`](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/blob/rewrite/ETS2LA.Controls/Program.cs#L11)
+
+This is one of the most important features of ETS2LA, and it's also the one that you **must use** instead of 3rd party libraries. ETS2LA provides a built in way to gather user input, and it's the only way that is guaranteed to work and that we allow. We handle the transitions between Linux/Windows/MacOS.
 
 ### Limitations of ETS2LA's input system.
-- **All Linux distributions might not support keyboard inputs.** Linux is much more secretive with keyboard inputs than Windows (this is good) and due to it, especially in Wayland environments, ETS2LA cannot guarantee that the operating system will pass us the keyboard. We provide a notification to users about this, and they must bind their inputs to a gamepad instead.
-- **Not all buttons are supported on all controllers.** We use standard input frameworks on both Windows and Linux (DX11/SDL2), despite this we might not correctly detect and read all buttons and axes on all controllers. We do our best, but this is just a limitation we have to live with.
+- **All Linux distributions might not support keyboard inputs.** Linux is much more secretive with keyboard inputs than Windows (this is good) and due to it, especially in Wayland environments, ETS2LA cannot guarantee that the operating system will pass us the keyboard. We support X11 inputs, and thus the distro in question has to at least pass modifiers to X11 for ETS2LA to work.
+- **Not all buttons are supported on all controllers.** We use standard input frameworks on both Windows and Linux (DX11/SDL3), despite this we might not correctly detect and read all buttons and axes on all controllers. We do our best, but this is just a limitation we have to live with.
 
 If you want to help iron out these features, you can check out the code on GitHub and see if you can find any issues or improvements. We're always happy to receive contributions!
 
@@ -73,6 +75,10 @@ Here's an illustration of what ideal layouts could look like, most likely users 
 <img src="/docs/rewrite/acc-controls.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
 <img src="/docs/rewrite/acc-controls-alt.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
 <img src="/docs/rewrite/acc-controls-slider.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
+:::
+
+:::danger
+In most situations, **you don't want to listen to the above default inputs!** These are instead provided by `ApplicationState` from `ETS2LA.State`, and simplified for use in plugins.
 :::
 
 :::warning

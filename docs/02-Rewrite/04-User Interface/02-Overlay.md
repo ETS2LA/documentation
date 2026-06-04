@@ -1,12 +1,13 @@
 ---
-title: "Working with the overlay"
-sidebar_label: "7. Working with the overlay"
+title: "Overlay/AR Windows"
+sidebar_label: "Overlay/AR Windows"
 ---
 
-The overlay is the main way for plugins to display information to users. We don't natively support editing the main ETS2LA window for security / simplicity, so instead you should create an overlay window. This overlay also supports rendering objects in 3d in the game world for more immersive features.
+[`ETS2LA.Overlay`](https://github.com/ETS2LA/Euro-Truck-Simulator-2-Lane-Assist/blob/rewrite/ETS2LA.Overlay/Overlay.cs#L33)
+
+Our overlay is the main way for plugins to display information to users. We don't natively support editing the main ETS2LA window for security / simplicity, so instead you should create your windows inside the overlay. This overlay also supports rendering objects in 3d in the game world for more immersive features.
 
 ### Creating an overlay window
-ETS2LA has made this as simple as possible, but make sure your .csproj file has a reference to `ETS2LA.Overlay` and you should be good to go. Below is an example:
 ```csharp
 using ETS2LA.Overlay;
 using Hexa.NET.ImGui;
@@ -16,8 +17,8 @@ using Hexa.NET.ImGui;
 WindowDefinition def = new WindowDefinition 
 {
     Title = "My Overlay Window",
-    // Check the WindowDefinition struct for more options, such as
-    // ImGui window flags.
+    // Check the WindowDefinition struct for more options, 
+    // such as ImGui window flags.
 };
 
 // You can then register your window with ETS2LA, and provide a callback function
@@ -40,7 +41,7 @@ using ETS2LA.Overlay;
 using ETS2LA.Overlay.AR;
 using Hexa.NET.ImGui;
 
-// This is going to be matched to the overlayrenderer API
+// This is going to be matched to the Window API
 // soon enough (RegisterRenderCallback has two parameters)
 ARRenderCallback callback = new ARRenderCallback 
 {
@@ -83,4 +84,4 @@ void Render3D()
     AR.EndWindow(offset, camera.truckRotation, 2, invertY: true);
 }
 ```
-These AR renderers cannot be closed by the user, so if you want to stop rendering you will have to call `OverlayHandler.Current.AR.UnregisterRenderCallback(ARRenderCallback)` with the same callback you registered with.
+These AR renderers cannot be closed by the user, so if you want to stop rendering you will have to call `OverlayHandler.Current.AR.UnregisterRenderCallback(ARRenderCallback)` with the same callback you registered with. Keep in mind that when the game is paused, AR elements are not shown. Users can also disable AR entirely, although we don't recommend them do that.
