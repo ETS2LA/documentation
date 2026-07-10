@@ -72,9 +72,9 @@ Usually `Increase` and `Decrease` are used to reset back to an existing ACC valu
 - At any time, the user could press `Assist` to toggle the lane assist on or off, without affecting ACC at all.
 
 Here's an illustration of what ideal layouts could look like, most likely users can't achieve this, and that's fine, as long as they can bind the controls to something they like.
-<img src="/docs/rewrite/acc-controls.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
-<img src="/docs/rewrite/acc-controls-alt.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
-<img src="/docs/rewrite/acc-controls-slider.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
+<img src="/docs/acc-controls.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
+<img src="/docs/acc-controls-alt.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
+<img src="/docs/acc-controls-slider.png" style={{width: "250px", borderRadius: "10px", "marginRight": "20px"}}/>
 :::
 
 :::danger

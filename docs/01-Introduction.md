@@ -21,7 +21,7 @@ Users think ETS2LA is what provides them with self driving and cruise control. B
 ### So what does ETS2LA provide plugins?
 This is what the pages here will cover. Our goal might seem simple, but as we've kept developing, it's become apparent that we need a ton of features. You should however keep in mind that not all features are features of ETS2LA itself, some things (like the visualization for example) are plugins just like everything else! In these cases you should take a look at the documentation or code comments inside those plugins to figure out more information.
 
-You can start off by learning [how ETS2LA defines and loads plugins](PluginLoading).
+You can start off by learning [how ETS2LA defines and loads plugins](Core Concepts/PluginLoading).
 
 ### What if I want to work on ETS2LA itself?
 These pages are mostly focused on plugin development. **You should always learn what the program does, before you start developing it.** Skim through these pages and you could even create your own little plugin, after that you can start looking into the codebase itself. There isn't any documentation available on the web, but most of our functions and classes are documented thoroughly. Just decide on what you want to do, fork the repo, and start working!

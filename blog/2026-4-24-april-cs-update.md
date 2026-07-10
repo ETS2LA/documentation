@@ -47,9 +47,9 @@ I took some time to figure out the control scheme for this `ApplicationState`, a
 
 Visually here are some ideas on how to bind this to controllers. The default binds are your **arrow keys**, but you can obviously change these to whatever you want. On controllers the **D-Pad** could be good, and on wheels whatever buttons you have available.
 
-<img src="/docs/rewrite/acc-controls.png" style={{width: "296px", borderRadius: "10px", "marginRight": "20px"}}/>
-<img src="/docs/rewrite/acc-controls-alt.png" style={{width: "296px", borderRadius: "10px", "marginRight": "20px"}}/>
-<img src="/docs/rewrite/acc-controls-slider.png" style={{width: "296px", borderRadius: "10px", "marginRight": "20px"}}/>
+<img src="/docs/acc-controls.png" style={{width: "296px", borderRadius: "10px", "marginRight": "20px"}}/>
+<img src="/docs/acc-controls-alt.png" style={{width: "296px", borderRadius: "10px", "marginRight": "20px"}}/>
+<img src="/docs/acc-controls-slider.png" style={{width: "296px", borderRadius: "10px", "marginRight": "20px"}}/>
 <ImageCaption caption="Possible Controller Bindings"/>
 The middle layout here is similar to how the arrow keys would work, where one of the buttons has to be bound outside of the arrows. This is also how it would look on a D-Pad. The `NEXT` button is used for UI interactions, the other buttons will also change their behaviour depending on if you're interacting with UI or not.
 
@@ -96,7 +96,7 @@ These are just some of the important people in the community. There are way, way
 <br/>
 :::note
 **Thanks for reading!**<br/> 
-If you're interested in what the code looks like (maybe you could create C# plugins in the future!), then check out the [Documentation](/docs/Rewrite/Introduction) for some code snippets and explanations. It's still being worked on, but it should give you a good idea of what to expect.
+If you're interested in what the code looks like (maybe you could create C# plugins in the future!), then check out the [Documentation](/docs/Introduction) for some code snippets and explanations. It's still being worked on, but it should give you a good idea of what to expect.
 
 We're welcoming all C# developers with open arms, my experience is mostly limited to Unity, and as such I'm having to learn how to do things the "right way" as I go. Please just keep in mind that we don't allow agentic AI in our codebase, we value the effort of individual people over the apparent "efficiency" of AI.
 :::

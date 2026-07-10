@@ -126,5 +126,5 @@ Source: https://github.com/luuukske/MonoCruise
 :::note
 **Thanks for reading!**<br/>Writing this post took a while, so if you have any feedback on the format or anything else please let me know! I'm looking forward to next month's devblog, hopefully that one will have more exciting news on the progress of C# and the first self-driving plugins.
 
-If you're interested in what the code looks like (maybe you could create C# plugins in the future!), then check out the [Documentation](/docs/Rewrite/Introduction) for some code snippets and explanations. It's still being worked on, but it should give you a good idea of what to expect.
+If you're interested in what the code looks like (maybe you could create C# plugins in the future!), then check out the [Documentation](/docs/Introduction) for some code snippets and explanations. It's still being worked on, but it should give you a good idea of what to expect.
 :::

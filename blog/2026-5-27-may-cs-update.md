@@ -73,7 +73,7 @@ I hope you're as excited for ETS2LA as I am, this will be the biggest change we'
 <br/>
 :::note
 **Thanks for reading!**<br/> 
-If you're interested in what the code looks like (maybe you could create C# plugins in the future!), then check out the [Documentation](/docs/Rewrite/Introduction) for some code snippets and explanations. It's still being worked on, but it should give you a good idea of what to expect.
+If you're interested in what the code looks like (maybe you could create C# plugins in the future!), then check out the [Documentation](/docs/Introduction) for some code snippets and explanations. It's still being worked on, but it should give you a good idea of what to expect.
 
 We're welcoming all C# developers with open arms, my experience is mostly limited to Unity, and as such I'm having to learn how to do things the "right way" as I go. Please just keep in mind that we don't allow agentic AI in our codebase, we value the effort of individual people over the apparent "efficiency" of AI.
 :::
