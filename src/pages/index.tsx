@@ -17,11 +17,17 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle" style={{color: 'white'}}>{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div className={styles.buttons} style={{flexDirection: 'row', gap: '16px', alignItems: 'center'}}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Python/Getting%20Started/Creating%20Your%20First%20Plugin">
-            Get started with your first plugin - 15min ⏱️
+            to="/docs/Introduction">
+            Get started with your plugin
+          </Link>
+          <p style={{margin: 0}}>or</p>
+          <Link
+            className="button button--secondary button--lg"
+            to="/blog">
+            Check our latest blog posts
           </Link>
         </div>
       </div>
@@ -34,7 +40,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Welcome to the ETS2LA Docs`}
-      description="This site hosts documentation for ETS2LA V2.0 and C#.">
+      description="Here you can find developer documentation for ETS2LA.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
